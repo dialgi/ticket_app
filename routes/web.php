@@ -31,7 +31,7 @@ Route::middleware('auth')->group(function () {
         Route::resource('categories', CategoryController::class);
 
         // Event Management
-        Route::resource('events', EventController::class);
+        Route::resource('events', AdminEventController::class);
 
         
         Route::resource('tickets', TiketController::class);
